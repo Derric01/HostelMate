@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# HostelMate - College Roommate Matching App (Frontend)
+
+A roommate-matching platform tailored for college hostel students, focusing on the frontend implementation. The app is structured like a dating app but designed to match students of the same gender and college based on shared hobbies.
+
+## Features
+
+- **Landing Page**: Introduction to the app with sign up and login options
+- **Authentication**: User registration and login (UI only)
+- **Profile Setup**: Upload profile photo, add bio, select hobbies
+- **Matchmaking**: View top 5 matches based on compatibility
+- **Browse Profiles**: Swipe through potential roommates
+- **Requests System**: Send, receive, and manage roommate requests
+- **Real-time Chat**: Chat with matched roommates
+- **Theme Toggle**: Switch between 32+ themes
+
+## Tech Stack
+
+- Next.js 14+ (App Router)
+- Tailwind CSS
+- DaisyUI for component styling
+- Framer Motion for animations
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/app`: Pages using the Next.js App Router
+- `/components`: Reusable UI components
+- `/public`: Static assets
 
-## Learn More
+## Note
 
-To learn more about Next.js, take a look at the following resources:
+This is a frontend-only implementation. In a real-world scenario, this would be connected to a backend service that handles:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- User authentication & session management
+- Database operations (MongoDB)
+- Real-time chat (WebSockets)
+- Profile matching logic
+- File uploads (Cloudinary)
