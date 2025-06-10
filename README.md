@@ -1,4 +1,4 @@
-# Roomie_Matcher - College Roommate Matching Platform
+# HostelMate - College Roommate Matching Platform
 
 A comprehensive roommate-matching platform for college hostel students, designed to help students find compatible roommates based on shared hobbies and interests.
 
