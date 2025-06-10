@@ -65,3 +65,52 @@ npm run dev
 ## Notes
 
 This project currently focuses on the frontend implementation only. The UI is designed to be easily integrated with backend services in the future.
+
+
+backend guide
+
+
+1. Database Schema Design
+   - User profiles
+   - Matching system
+   - Chat functionality
+   - Conversations management
+
+2. API Endpoints
+   - Authentication flows
+   - Profile management
+   - Matching system
+   - Real-time chat
+
+3. WebSocket Implementation
+   - Connection handling
+   - Message events
+   - Match events
+   - Security considerations
+
+4. Matching Algorithm
+   - Compatibility calculation
+   - Weighting factors
+   - Performance optimization
+
+5. File Upload Service
+   - Cloudinary integration
+   - Security measures
+   - Image optimization
+
+6. Security Considerations
+   - JWT implementation
+   - Input validation
+   - WebSocket security
+   - File upload security
+
+7. Development Setup
+   - MongoDB configuration
+   - Environment setup
+   - Required variables
+
+8. Testing, Deployment, and Monitoring
+   - Test coverage requirements
+   - Deployment architecture
+   - Performance monitoring
+
