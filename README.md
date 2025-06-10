@@ -1,116 +1,53 @@
-# HostelMate - College Roommate Matching Platform
+# HostelMate - College Roommate Matching App (Frontend)
 
-A comprehensive roommate-matching platform for college hostel students, designed to help students find compatible roommates based on shared hobbies and interests.
+A roommate-matching platform tailored for college hostel students, focusing on the frontend implementation. The app is structured like a dating app but designed to match students of the same gender and college based on shared hobbies.
 
-## Project Structure
+## Features
 
-This project is organized into two main parts:
+- **Landing Page**: Introduction to the app with sign up and login options
+- **Authentication**: User registration and login (UI only)
+- **Profile Setup**: Upload profile photo, add bio, select hobbies
+- **Matchmaking**: View top 5 matches based on compatibility
+- **Browse Profiles**: Swipe through potential roommates
+- **Requests System**: Send, receive, and manage roommate requests
+- **Real-time Chat**: Chat with matched roommates
+- **Theme Toggle**: Switch between 32+ themes
 
-### Frontend
+## Tech Stack
 
-The frontend is a Next.js application with the following features:
-- Landing page with introduction to the platform
-- User authentication (UI only)
-- Profile setup with hobby selection
-- Matchmaking based on compatibility
-- Browse profiles with swipe functionality
-- Request system for connecting with potential roommates
-- Real-time chat interface
-- Theme toggling with 32+ options from DaisyUI
-
-### Backend (Future Development)
-
-The backend will be implemented in a future phase and will include:
-- User authentication and session management
-- MongoDB database for storing user profiles
-- WebSocket integration for real-time chat
-- Profile matching algorithm
-- File upload service integration
+- Next.js 14+ (App Router)
+- Tailwind CSS
+- DaisyUI for component styling
+- Framer Motion for animations
 
 ## Getting Started
 
-### Running the Frontend
+First, install the dependencies:
 
-1. Navigate to the frontend directory:
-```bash
-cd frontend
-```
-
-2. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Start the development server:
+Then, run the development server:
+
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Tech Stack
+## Project Structure
 
-- **Frontend**:
-  - Next.js 14+ (App Router)
-  - Tailwind CSS
-  - DaisyUI
-  - Framer Motion
+- `/app`: Pages using the Next.js App Router
+- `/components`: Reusable UI components
+- `/public`: Static assets
 
-- **Backend** (Future Implementation):
-  - FastAPI/Django
-  - MongoDB
-  - WebSockets
-  - Cloudinary for uploads
+## Note
 
-## Notes
+This is a frontend-only implementation. In a real-world scenario, this would be connected to a backend service that handles:
 
-This project currently focuses on the frontend implementation only. The UI is designed to be easily integrated with backend services in the future.
-
-
-backend guide
-
-
-1. Database Schema Design
-   - User profiles
-   - Matching system
-   - Chat functionality
-   - Conversations management
-
-2. API Endpoints
-   - Authentication flows
-   - Profile management
-   - Matching system
-   - Real-time chat
-
-3. WebSocket Implementation
-   - Connection handling
-   - Message events
-   - Match events
-   - Security considerations
-
-4. Matching Algorithm
-   - Compatibility calculation
-   - Weighting factors
-   - Performance optimization
-
-5. File Upload Service
-   - Cloudinary integration
-   - Security measures
-   - Image optimization
-
-6. Security Considerations
-   - JWT implementation
-   - Input validation
-   - WebSocket security
-   - File upload security
-
-7. Development Setup
-   - MongoDB configuration
-   - Environment setup
-   - Required variables
-
-8. Testing, Deployment, and Monitoring
-   - Test coverage requirements
-   - Deployment architecture
-   - Performance monitoring
-
+- User authentication & session management
+- Database operations (MongoDB)
+- Real-time chat (WebSockets)
+- Profile matching logic
+- File uploads (Cloudinary)
